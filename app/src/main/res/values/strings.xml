@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IT Dictionary</string>
+    <string name="details">Details</string>
+    <string name="search">Search</string>
+    <string name="search_here">Search here</string>
+    <string name="description">Description:</string>
+</resources>

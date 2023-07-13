@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'kotlin-kapt'
     id 'org.jetbrains.kotlin.android'
 }
 
@@ -55,4 +56,27 @@ dependencies {
     /**
      * for fragment-ktx*/
     implementation "androidx.fragment:fragment-ktx:1.5.1"
+
+
+    /**
+     * Room Database
+     * */
+    implementation "androidx.room:room-runtime:2.5.0"
+    kapt "androidx.room:room-compiler:2.5.0"
+    implementation "androidx.room:room-ktx:2.5.0"
+
+
+
+    /**
+     * Corbind
+     * */
+    implementation 'ru.ldralighieri.corbind:corbind:1.5.4'
+    implementation 'ru.ldralighieri.corbind:corbind-material:1.5.4'
+    implementation 'ru.ldralighieri.corbind:corbind-swiperefreshlayout:1.5.4'
+
+    /**
+     *  Coroutines
+     * */
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
 }

@@ -20,9 +20,14 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_bookmarked_words"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="12dp"
+        tools:itemCount="10"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_dictionary_bookmark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_app_name" />
 

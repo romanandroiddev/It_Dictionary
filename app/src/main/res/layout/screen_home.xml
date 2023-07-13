@@ -18,6 +18,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_app_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_app_name"/>
+
     <View
         android:id="@+id/v_line"
         android:layout_width="match_parent"
@@ -28,10 +40,13 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_words"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/v_line"
-        tools:listitem="@layout/item_dictionary" />
+        tools:listitem="@layout/item_dictionary_bookmark" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
